@@ -37,7 +37,7 @@ f = xlwt.Workbook()
 sheet1 = f.add_sheet(u'list1', cell_overwrite_ok=True)
 sheet2 = f.add_sheet(u'list2', cell_overwrite_ok=True)
 
-for i in range(len(title)):
+""" for i in range(len(title)):
     sheet1.write(0,i,title[i])
 for i, item in enumerate(ccl[0]):
     response = requests.get('https://www.zdic.net/hans/'+item)
@@ -84,7 +84,7 @@ for i, item in enumerate(ccl[1]):
 print('字表二保存成功~')
 
 f.save('HanList.xls')
-print('汉语常用字表保存成功~')
+print('汉语常用字表保存成功~') """
 
 excel = xlrd.open_workbook('hans.xls')
 table = excel.sheet_by_index(0)
